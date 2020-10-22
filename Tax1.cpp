@@ -1,27 +1,52 @@
 #include <iostream>
-#include <conio.h>
+using namespace std;
 
-void main()
+int main()
 {
+
 float income,tax,surchrg;
 
-cout<<"Enter Income of person : ";
-cin>>income;
+cout << "Enter Income: ";
+cin >> income;
 
-if(income<=50000.00)
+// Tax brackets
+
+if(income<=250000.00)
 tax=0;
 
-else if (income<=100000.00)
-tax=(income-50000.00)*10/100;
+else if (income<=500000.00)
+tax=(income-500000.00)*5/100;
 
-else if (income<=250000.00)
-tax=(income-100000.00)*20/100+5000;
+else if (income<=750000.00)
+tax=(income-750000.00)*10/100 + 12500;
 
-else
-tax=(income-250000.00)*30/100+5000+30000;
+else if (income<=1000000.00)
+tax=(income-1000000.00)*15/100 + 12500 + 25000;
+
+else if (income<=1250000.00)
+tax=(income-1250000.00)*20/100 + 12500 + 25000 + 37500;
+
+else if (income<=1500000.00)
+tax=(income-1500000.00)*25/100 + 12500 + 25000 + 37500 + 50000;
+
+else if (income>1500000.00)
+tax=(income-1500000.00)*30/100 + 12500 + 25000 + 37500 + 50000 + 62500 ;
  
-if (tax>10000.00)
-surchrg=tax*2/100;
+
+
+// Surcharge
+
+if (1000000>income>5000000.00)
+surchrg=income*10/100;
+
+if (2000000>income>10000000.00)
+surchrg=income*15/100;
+
+if (5000000>income>2000000.00)
+surchrg=income*25/100;
+
+if (income>50000000.00)
+surchrg=income*37/100;
 
 else
 surchrg=0;
@@ -31,6 +56,5 @@ cout<<"TAX = "<<tax<<"\n";
 cout<<"Surcharge = "<<surchrg<<"\n";
 
 
-cout << "For additional information regarding tax slabs please visit the link below\n"; 
+return 0;
 }
-https://economictimes.indiatimes.com/wealth/tax/latest-income-tax-slabs/articleshow/62751981.cms
