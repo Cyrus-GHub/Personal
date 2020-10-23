@@ -5,7 +5,7 @@
 int main()
 {
 
-double income,tax,surchrg;
+double income,tax,cess,surchrg;
 
 printf("Enter Income: ");
 scanf("&d", &income);
@@ -53,8 +53,9 @@ surchrg=0;
  
 printf("Income = %d", income);
 printf("TAX = %d",tax);
+printf("Cess = %d", cess);
 printf("Surcharge = %d",surchrg);
-printf("Total TAX Liability = %d", tax + surchrg);
+printf("Total TAX Liability = %d", tax + cess + surchrg);
 
 
 return 0;

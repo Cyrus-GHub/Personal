@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 
-double income,tax,surchrg;
+double income,tax,cess,surchrg;
 
 cout << "Enter Income: ";
 cin >> income;
@@ -51,11 +51,15 @@ surchrg=income*37/100;
 
 else
 surchrg=0;
+
+cess = tax*(4/100);
+
  
 cout<<"Income = "<<income<<"\n";
 cout<<"TAX = "<<tax<<"\n";
+cout<<"Cess = " << cess << "\n";
 cout<<"Surcharge = "<<surchrg<<"\n";
-cout<<"Total TAX Liability = " << tax + surchrg << "\n";
+cout<<"Total TAX Liability = " << tax + cess + surchrg<< "\n";
 
 
 return 0;
