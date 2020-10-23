@@ -1,15 +1,14 @@
 /* Calculate your Income tax as per current Indian tax slabs under the NEW tax regime for FY 2020-21 */
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main()
 {
 
 double income,tax,surchrg;
 
-cout << "Enter Income: ";
-cin >> income;
+printf("Enter Income: ");
+scanf("&d", &income);
 
 // Tax brackets
 
@@ -52,10 +51,10 @@ surchrg=income*37/100;
 else
 surchrg=0;
  
-cout<<"Income = "<<income<<"\n";
-cout<<"TAX = "<<tax<<"\n";
-cout<<"Surcharge = "<<surchrg<<"\n";
-cout<<"Total TAX Liability = " << tax + surchrg << "\n";
+printf("Income = %d", income);
+printf("TAX = %d",tax);
+printf("Surcharge = %d",surchrg);
+printf("Total TAX Liability = %d", tax + surchrg);
 
 
 return 0;
