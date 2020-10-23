@@ -52,7 +52,7 @@ surchrg=income*37/100;
 else
 surchrg=0;
 
-cess = tax*(4/100);
+cess = tax*0.04;
 
  
 cout<<"Income = "<<income<<"\n";

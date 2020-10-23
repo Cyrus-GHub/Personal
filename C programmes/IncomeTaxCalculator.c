@@ -50,6 +50,8 @@ surchrg=income*37/100;
 
 else
 surchrg=0;
+
+cess = tax*0.04;
  
 printf("Income = %d", income);
 printf("TAX = %d",tax);
