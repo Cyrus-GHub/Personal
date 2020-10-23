@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <string>
 using namespace std;
 
 // We start the program with these
@@ -80,16 +81,60 @@ int main()
 	cout << "The above line has " << End.length() << " index positions" << endl;
 	cout << "Also, the letter C occurs at index postion " << End.find("C", 0) << " in this line\n";
 
-	cout << endl;
-	cout << endl;
-	cout << endl;
-	cout << endl;
-	cout << endl;
-	cout << endl;
-	cout << endl;
-	cout << endl;
-	cout << endl;
-    cout << endl;
-	cout << endl;
 
+
+
+// Let's make a function that gives us the cube of a number
+// Then, we'll 'call' this function later
+// The function itself is placed at the end of the program
+
+
+int Fn(string Name, double Num);   // This line addresses that there is such a function in the program
+
+
+//We'll continue with the code
+
+
+string gender, Name2;
+int height;
+
+cout << "Enter your name: ";
+getline (cin, Name2);
+    
+
+cout << "Enter your gender: \n";
+cin >> gender;
+
+cout << "Enter your height in cm: \n";
+cin >> height;
+
+
+if(height> 180)
+{
+  cout << "Your are a tall " << gender << "\n"; 
+}
+
+else
+{
+  cout << "You are not a tall " << gender << "\n";
+}
+
+
+Fn("",1);
+return 0;
+
+
+
+}
+
+int Fn(string Name, double Num)
+{
+
+  cout << "Enter a number : " << endl;
+  cin >> Num;
+
+  cout << "The cube of " << Num << " is " << pow(Num, 3) << endl;
+  cout << endl;
+
+  return 0;
 }
