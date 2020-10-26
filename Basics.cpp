@@ -70,7 +70,7 @@ int main()
 	cout << "Square Root: " << sqrt(25) << "\n";
 	cout << "Round a number: " << round(4.6) << "\n";
 	cout << "Rounds up a number: " << ceil(4.1) << "/n";;
-	cout << "Rounds down a number: " << floor(4.8) << "/n";;
+	cout << "Rounds down a number: " << floor(4.8) << "/n";
 	cout << "Retrns the bigger of 2 numbers: " << fmax(2,6) << "\n";
 	cout << "Retrns the smaller of 2 numbers: " << fmin(2,6) << "\n";
 	

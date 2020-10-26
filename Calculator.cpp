@@ -1,20 +1,48 @@
-/* Add 3 numbers */
+/* 4 function calculator */
 #include <iostream>
 using namespace std;
 int main()
 {
-    double num1, num2, num3;
+    double n1, n2;
+    char op;
     
     cout << "First number: ";
-    cin >> num1;
+    cin >> n1;
+
+    cout << "Choose an operato: ";
+    cin >> op;
 
     cout << "Second number: ";
-    cin >> num2;
+    cin >> n2;
 
-    cout << "Third number: ";
-    cin >> num3;
+if(op = '+')
+{
+    cout << n1 + n2;
+}
+    else if(op = '-')
+{
+    cout << n1-n2;
+}
 
-    cout << num1+num2+num3;
+ else if(op = '*')
+{
+    cout << n1*n2;
+}
+
+else if(op = 'X')
+{
+    cout << n1*n2;
+}
+
+ else if(op = '/')
+{
+    cout << n1/n2;
+}
+
+else 
+{
+    cout << "INVALID OPERATOR. Please use one of the following operators: (+,-,*,/) ";
+} 
  
     return 0;
 }
