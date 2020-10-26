@@ -2,12 +2,11 @@
 // I wrote this to get a hang of the different aspects of C++
 
 
-#include <iostream>
+#include <iostream>   // # is a pre-processor directive, everything written inside <> is a header file
 #include <cmath>
 #include <string>
-using namespace std;
+using namespace std;  // Sets the default namesapce to STANDARD
 
-// We start the program with these
 
 int main()
 {
@@ -16,7 +15,7 @@ int main()
 	string Name = "Tim";
 	int Age = 50;
 	double CGPA = 8.9;
-	string End = "This is written in C++";
+	string End = "This is written in C++"; // Used later to showcase string functions
 
 	// Let's write something using these
 	
@@ -27,7 +26,7 @@ int main()
 	  
 	cout << endl;
 	
-	Name = "John";
+	Name = "John"; // This will change the value stored in the string variable 'Name' form Tim to John 
 
 	cout << "He also had a friend named " << Name << endl;
 	cout << Name << " had a bright mind" << endl;
@@ -50,7 +49,7 @@ int main()
 	cout << "Addition: " << a+b << endl;
 	cout << "Substraction: " << a-b << endl;
 	cout << "Multiplication: " << a*b << endl,
-	cout << "Division: " << a/b << endl;
+	cout << "Division: " << a/b << endl;  // This will only give integer output because inputs are integers
     cout << "Modulus: " << a%b << endl;  // '%' is read modulus, it gives us the remainder
 
 	cout << endl;
@@ -58,15 +57,14 @@ int main()
     // If we use multiple mathematical operators at once, they follow BODMAS convention
 
 	cout << a << "+" << b << "*" << b << " = " << a+b*b << endl;
-	cout << "If we add 2 to " << a << " we get " << a++ << endl;
-
+	
 	cout << endl;
 	cout << endl;
 	cout << endl;
 
     // A few other math operations
 
-	cout << "Power: " << pow(2,4) << "\n";
+	cout << "Power: " << pow(2,4) << "\n";  // Here we raised 2 to its 4th power i.e., 2^4
 	cout << "Square Root: " << sqrt(25) << "\n";
 	cout << "Round a number: " << round(4.6) << "\n";
 	cout << "Rounds up a number: " << ceil(4.1) << "/n";;
@@ -81,60 +79,4 @@ int main()
 	cout << "The above line has " << End.length() << " index positions" << endl;
 	cout << "Also, the letter C occurs at index postion " << End.find("C", 0) << " in this line\n";
 
-
-
-
-// Let's make a function that gives us the cube of a number
-// Then, we'll 'call' this function later
-// The function itself is placed at the end of the program
-
-
-int Fn(string Name, double Num);   // This line addresses that there is such a function in the program
-
-
-//We'll continue with the code
-
-
-string gender, Name2;
-int height;
-
-cout << "Enter your name: ";
-getline (cin, Name2);
-    
-
-cout << "Enter your gender: \n";
-cin >> gender;
-
-cout << "Enter your height in cm: \n";
-cin >> height;
-
-
-if(height> 180)
-{
-  cout << "Your are a tall " << gender << "\n"; 
-}
-
-else
-{
-  cout << "You are not a tall " << gender << "\n";
-}
-
-
-Fn("",1);
-return 0;
-
-
-
-}
-
-int Fn(string Name, double Num)
-{
-
-  cout << "Enter a number : " << endl;
-  cin >> Num;
-
-  cout << "The cube of " << Num << " is " << pow(Num, 3) << endl;
-  cout << endl;
-
-  return 0;
 }

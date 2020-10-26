@@ -8,8 +8,8 @@ int main()
 	int age;
 
 	cout << "Enter your name: ";
-	getline(cin, name); // We use 'getline' instead of using 'cin' directly because user may input 'terminators' i.e., Space or commas
-	
+	getline(cin, name); // We use 'getline' instead of using 'cin' directly because user may input 'terminators' i.e., Space or commass
+
 	cout << "Hello " << name << endl;
 	cout << endl;
 	cout << "Enter you age: ";
