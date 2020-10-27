@@ -37,16 +37,16 @@ else
 // Surcharge
 
 if (10000000>income && income>5000000.00)
-surchrg=income*10/100;
+surchrg=income*0.1;
 
 if (20000000>income && income>10000000.00)
-surchrg=income*15/100;
+surchrg=income*0.15;
 
 if (50000000>income && income>20000000.00)
-surchrg=income*25/100;
+surchrg=income*0.25;
 
 if (income>50000000.00)
-surchrg=income*37/100;
+surchrg=income*0.37;
 
 else
 surchrg=0;
