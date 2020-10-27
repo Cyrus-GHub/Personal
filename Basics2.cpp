@@ -1,6 +1,4 @@
-#include <iostream>   
-#include <cmath>
-#include <string>
+#include <iostream> 
 using namespace std;
 
 
@@ -8,8 +6,9 @@ using namespace std;
 
 int Fn(string Name, double Num);   // This line addresses that there is such a function in the program
 string IceCream (int ItemN);       // This line addresses that there is such a function in the program
-// The actual functions are situated at the end of this program
-//We'll continue with the code and 'call' these fuctions later
+
+// The actual functions are situated near the end of this program
+// We'll continue with the code and 'call' these fuctions later
 
 
 
@@ -19,10 +18,72 @@ int main()
 
    cout << IceCream(1); // We just 'called' the string function that sorts several items in an ice cream parlor
 
-   return 0;
+   
+
+   //WHILE LOOP
+
+   // A guessing game using While Loop
+
+
+{
+    int secret = 42;
+    int guess;
+    int guessCount = 0;
+    int guessLimit = 5;
+    bool ZeroGuessesLeft = false;
+
+    cout << "Enter your guess: \n";
+    cin >> guess;
+ 
+    while(guess != secret && !ZeroGuessesLeft)
+    { 
+        if(guessCount < guessLimit)
+    {
+        cout << "Your guess was not the secret number: \n";
+        cout << "Enter your guess: \n";
+        cin >> guess;
+        guessCount++;
+    }
+       else
+       {
+           ZeroGuessesLeft = true;
+       }
+    }
+   
+
+   if(ZeroGuessesLeft)
+   {
+       cout << "You Lose" << endl;
+   }
+
+   else
+   { cout << "You Win!";
+    return 0;
+   }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
-
 
 
 
@@ -40,7 +101,6 @@ int Fn(double Num)
 
   return Num*Num*Num;
 }
-
 
 
 
@@ -66,31 +126,4 @@ switch(ItemN)
 
 }
 
-
-
-
-//WHILE LOOP
-
-// A guessing game using While Loop
-
-#include <iostream>
-using namespace std;
-int main()
-{
-    int secret = 7;
-    int guess;
-
-    cout << "Enter your guess: \n";
-    cin >> guess;
- 
-    while(guess != secret)
-    {
-        cout << "Your guess was not the secret number: \n";
-        cout << "Enter your guess: \n";
-        cin >> guess;
-    }
-   
-    cout << "You Win!";
-    return 0;
-} 
 
