@@ -16,22 +16,22 @@ if(income<=250000.00)
 {tax=0;}
 
 else if (250000.00<income && income<=500000.00)
-{tax=(income-250000.00)*5/100;}
+{tax=(income-250000.00)*0.05;}
 
 else if (500000.00<income && income<=750000.00)
-{tax=(income-500000.00)*10/100 + 12500;}
+{tax=(income-500000.00)*0.10 + 12500;}
 
 else if (750000.00<income && income<=1000000.00)
-{tax=(income-750000.00)*15/100 + 12500 + 25000;}
+{tax=(income-750000.00)*0.15 + 12500 + 25000;}
 
 else if (1000000.00<income && income <=1250000.00)
-{tax=(income-1000000.00)*20/100 + 12500 + 25000 + 37500;}
+{tax=(income-1000000.00)*0.20 + 12500 + 25000 + 37500;}
 
 else if (1250000.00<income && income<=1500000.00)
-{tax=(income-1250000.00)*25/100 + 12500 + 25000 + 37500 + 50000;}
+{tax=(income-1250000.00)*0.25 + 12500 + 25000 + 37500 + 50000;}
 
 else 
-{tax=(income-1500000.00)*30/100 + 12500 + 25000 + 37500 + 50000 + 62500;}
+{tax=(income-1500000.00)*0.30 + 12500 + 25000 + 37500 + 50000 + 62500;}
  
 
 // Surcharge
@@ -54,10 +54,10 @@ surchrg=0;
 cess = tax*0.04;
  
 printf("Income = %d", income);
-printf("TAX = %d",tax);
-printf("Cess = %d", cess);
-printf("Surcharge = %d",surchrg);
-printf("Total TAX Liability = %d", tax + cess + surchrg);
+printf("\nTAX = %d",tax);
+printf("\nCess = %d", cess);
+printf("\nSurcharge = %d",surchrg);
+printf("\nTotal TAX Liability = %d", tax + cess + surchrg);
 
 
 return 0;
