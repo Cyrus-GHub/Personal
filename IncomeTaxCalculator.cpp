@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-
 double income,tax,cess,surchrg;
 
 cout << "Enter Income: ";
