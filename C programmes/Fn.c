@@ -16,8 +16,6 @@ int main()
 
 
 
-
-
 int maths(int Num)
 {
    return Num*Num*Num;
