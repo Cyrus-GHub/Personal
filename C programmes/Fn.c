@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int secondary();
+
 int maths(int Num);
 
 int main()
@@ -15,12 +15,7 @@ int main()
 }
 
 
-int secondary()
-{
-    printf("Hello World!\n");
 
-    return 0;
-}
 
 
 int maths(int Num)
