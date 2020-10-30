@@ -9,7 +9,7 @@ int main()
     cout << "First number: ";
     cin >> n1;
 
-    cout << "Choose an operato: ";
+    cout << "Choose an operator: ";
     cin >> op;
 
     cout << "Second number: ";
