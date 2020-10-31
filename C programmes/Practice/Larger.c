@@ -12,6 +12,9 @@ int main()
     if(a>b)
     {printf("%d is larger", a);}
 
+    else if(a == b)
+    {printf("Both numbers are equal");}
+
     else
     {printf("%d is larger", b);}
 
