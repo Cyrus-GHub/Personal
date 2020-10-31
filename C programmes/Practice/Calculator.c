@@ -5,14 +5,14 @@ int main()
     char op;
 
     printf("Enter first number: ");
-    scanf("%d", a);
+    scanf("%d", &a);
 
     printf("\n List of available operators: +(add), -(subtract), *(multiply), /(divide)");
     printf("\n Enter Operator: ");
-    scanf("%c", op);
+    scanf("%c", &op);
 
     printf("\n Enter second number: ");
-    scanf("%d", b);
+    scanf("%d", &b);
 
     if (op = '+')
     {
