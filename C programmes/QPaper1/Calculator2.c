@@ -1,29 +1,38 @@
 #include <stdio.h>
 int main()
 {
-    float a,b,result;
+    double a, b, result;
+    int flag;
     char op;
     char str[] = "Invalid Operator";
-
-    printf("Enter first number: ");
-    scanf("%f", &a);
 
     printf("\n Enter an operator: ");
     scanf("%c", &op);
 
-    printf ("\n Enter second number: ");
-    scanf("%f", &b);
+    printf("Enter numbers: ");
+    scanf("%lf %lf", &a, &b);
 
     switch (op)
     {
-        case '+': result= a+b; break;
-        case '-': result= a-b; break;
-        case '*': result= a*b; break;
-        case '/': result= a/b; break;
-        default : printf("%s", str); break;  
+    case '+':
+        result = a + b;
+        break;
+    case '-':
+        result = a - b;
+        break;
+    case '*':
+        result = a * b;
+        break;
+    case '/':
+        result = a / b;
+        break;
+    default:
+        flag = 0;
+        printf("%s", str);
+        break;
     }
 
-    printf("\n %f %c %f = %f", a, op, b, result);
+    printf("\n %.3lf %c %.3lf = %.3lf", a, op, b, result);
 
     return 0;
 }
