@@ -3,7 +3,7 @@ using namespace std;
 
 //Let's make a function that cubes numbers
 
-int Fn(string Name, double Num); // This line addresses that there is such a function in the program
+int Fn(double Num); // This line addresses that there is such a function in the program
 string IceCream(int ItemN);      // This line addresses that there is such a function in the program
 
 // The actual functions are situated near the end of this program
@@ -11,9 +11,11 @@ string IceCream(int ItemN);      // This line addresses that there is such a fun
 
 int main()
 {
-    cout << Fn(1) << "\n"; // We just 'called' the int function that cubes numbers
+    cout << Fn(1.0) << "\n"; // We just 'called' the int function that cubes numbers
 
     cout << IceCream(1); // We just 'called' the string function that sorts several items in an ice cream parlor
+
+
 
     //WHILE LOOP
 
@@ -57,6 +59,11 @@ int main()
     }
 }
 
+
+
+
+
+
 //FUNCTIONS
 
 // Here is that int function that we used earlier to cube numbers
@@ -69,6 +76,7 @@ int Fn(double Num)
 
     return Num * Num * Num;
 }
+
 
 
 
