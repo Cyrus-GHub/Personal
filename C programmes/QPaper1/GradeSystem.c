@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    float marks;
+    int marks;
     int c;
     char grade;
 

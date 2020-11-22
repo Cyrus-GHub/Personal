@@ -1,36 +1,38 @@
 #include <stdio.h>
 int main()
 {
-    int a, b;
+    float a, b, ad, su, mu, di;
     char op;
+
     printf("\n List of available operators: +(add), -(subtract), *(multiply), /(divide)");
     printf("\n Enter Operator: ");
     scanf("%c", &op);
 
-    printf("Enter first number: ");
-    scanf("%d", &a);
-
-    printf("\n Enter second number: ");
-    scanf("%d", &b);
+    printf("Enter numbers: ");
+    scanf("%f %f", &a, &b);
 
     if (op = '+')
     {
-        printf("%d", a + b);
+        ad = a + b;
+        printf("%f", ad);
     }
 
     else if (op = '-')
     {
-        printf("%d", a - b);
+        su = a - b;
+        printf("%f", su);
     }
 
     else if (op = '*')
     {
-        printf("%d", a * b);
+        mu = a * b;
+        printf("%f", mu);
     }
 
     else if (op = '/')
     {
-        printf("%d", a / b);
+        di = a / b;
+        printf("%f", di);
     }
 
     else

@@ -1,6 +1,7 @@
 // Find roots of ax^2+bx+c=0
 
-// ERROR: IMAGINARY ROOTS DON'T SHOW i PART
+// ERROR: (D < 0) doesn't show correct imaginary parts
+
 #include <stdio.h>
 #include <math.h>
 int main()
@@ -17,13 +18,11 @@ int main()
     if (D > 0)
         Dtype = 1;
 
-    else if (D = 0)
+    else if (D == 0)
         Dtype = 2;
 
     else
         Dtype = 3;
-
-
 
     switch (Dtype)
     {
@@ -31,20 +30,20 @@ int main()
         R1 = (-b + sqrt(D)) / (2 * a);
         R2 = (-b - sqrt(D)) / (2 * a);
 
-        printf("\n %.3f and %.3f are the roots of the quadratic equatoin", R1, R2);
+        printf("\n %.3f and %.3f are the roots of the quadratic equation", R1, R2);
         break;
 
     case 2:
         R1 = R2 = (-b / 2 * a);
 
-        printf("\n %.3f and %.3f are the common roots of the quadratic equatoin", R1, R2);
+        printf("\n %.3f and %.3f are the common roots of the quadratic equation", R1, R2);
         break;
 
     case 3:
         real = -b / (2 * a);
         img = sqrt(-D) / (2 * a);
 
-        printf("%.3f + %.3fi and %.3f - %.3fi are the roots of the quadratic equatoin", real, img, real, img);
+        printf("%.3f + %.3fi and %.3f - %.3fi are the roots of the quadratic equation", real, img, real, img);
         break;
 
     default:
@@ -53,4 +52,3 @@ int main()
 
     return 0;
 }
-    
