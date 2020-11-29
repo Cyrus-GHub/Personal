@@ -52,7 +52,6 @@ int main()
     printf("\n \n Number of negative elements in the array: %d", nc);
     printf("\n \n Number of 'zeroes' in the array: %d", z);
 
-
     printf("\n");
     printf("\n");
 
