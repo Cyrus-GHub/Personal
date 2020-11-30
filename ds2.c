@@ -90,8 +90,8 @@ int convert_1D_Row_Major_to_2D(int arr1D[], int *arr2D, int row, int col)
 int main()
 {
     int arr2D[ROW][COL] = {{1, 2, 3, 4},
-                           {1, 2, 3, 4},
-                           {1, 2, 3, 4}};
+                           {5, 6, 7, 8},
+                           {9, 10, 11, 12}};
     int arr1D[ROW * COL] = {0};
 
     printf("Enter the elements of 2D Matrix (3x4) in Matrix Form:\n");
