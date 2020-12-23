@@ -54,23 +54,14 @@ int main()
         printf(" %d, ", One_D_Matrix1[i]);
     }
 
-    // Duplicating original matrix for resolving garbage value error
-
-    for (i = 0; i < 3; i++)
-    {
-        for (j = 0; j < 4; j++)
-        {
-            mx_duplicate[3][4] = mx[i][j];
-        }
-    }
-
+    
     // Conversion to 1-D Matrix (Row-major)
 
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 4; j++)
         {
-            One_D_Matrix2[k] = mx_duplicate[i][j];
+            One_D_Matrix2[k] = mx[i][j];
             k++;
         }
     }
@@ -93,7 +84,7 @@ int main()
     for (i = 0; i < 12; i++)
     {
         if (One_D_Matrix1[i] % 2 != 0)
-            Even_Matrix[i] = One_D_Matrix2[i];
+            Even_Matrix[i] = One_D_Matrix1[i];
 
         else
            continue;
